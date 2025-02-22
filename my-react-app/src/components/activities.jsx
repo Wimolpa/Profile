@@ -13,17 +13,23 @@ const Activities = () => {
             <div className="grid grid-cols-3 gap-4">
                 {/* รูปที่ 1 */}
                 <div className="w-full h-48">
-                    <img src={a1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                    <a href={a1} target="_blank" >
+                        <img src={a1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
 
                 {/* รูปที่ 2 */}
                 <div className="w-full h-48">
-                    <img src={a2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                    <a href={a2} target="_blank" >
+                        <img src={a2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
 
                 {/* รูปที่ 3 */}
                 <div className="w-full h-48">
-                    <img src={a4} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                    <a href={a4} target="_blank" >
+                        <img src={a4} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mt-4"> Lab Assistant / Teacher Assistant</h2>
@@ -35,17 +41,23 @@ const Activities = () => {
             <div className="grid grid-cols-3 gap-4 pt-5">
                 {/* รูปที่ 1 */}
                 <div className="w-full h-48">
-                    <img src={aa1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                    <a href={aa1} target="_blank" >
+                        <img src={aa1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
 
                 {/* รูปที่ 2 */}
                 <div className="w-full h-48">
-                    <img src={aa2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                    <a href={aa2} target="_blank" >
+                        <img src={aa2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
 
                 {/* รูปที่ 3 */}
                 <div className="w-full h-48">
-                    <img src={aa3} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                    <a href={aa3} target="_blank" >
+                        <img src={aa3} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                    </a>
                 </div>
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mt-4"> The Best of the Best Embedded System Develpers : TESA Top Gun Rally 2023</h2>

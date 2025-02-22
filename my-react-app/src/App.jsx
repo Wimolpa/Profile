@@ -3,6 +3,7 @@ import './App.css'
 import AboutMe from './components/aboutme.jsx';
 import Skills from './components/skills';
 import Activities from './components/activities.jsx';
+import Project from './components/project.jsx';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Activities />
+      <Project />
 
     </>
   )
