@@ -18,9 +18,9 @@ const Project = () => {
                 </div>
 
                 {/* รูปภาพ */}
-                <div className="w-full h-58">
+                <div className="w-full h-58 ">
                     <a href={fire} target="_blank" rel="noopener noreferrer">
-                        <img src={fire} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                        <img src={fire} alt="Image 2" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
             </div>

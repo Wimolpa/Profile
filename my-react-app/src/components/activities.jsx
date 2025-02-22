@@ -14,21 +14,21 @@ const Activities = () => {
                 {/* รูปที่ 1 */}
                 <div className="w-full h-48">
                     <a href={a1} target="_blank" >
-                        <img src={a1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                        <img src={a1} alt="Image 1" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
 
                 {/* รูปที่ 2 */}
                 <div className="w-full h-48">
                     <a href={a2} target="_blank" >
-                        <img src={a2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                        <img src={a2} alt="Image 2" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
 
                 {/* รูปที่ 3 */}
                 <div className="w-full h-48">
                     <a href={a4} target="_blank" >
-                        <img src={a4} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                        <img src={a4} alt="Image 3" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
             </div>
@@ -42,21 +42,21 @@ const Activities = () => {
                 {/* รูปที่ 1 */}
                 <div className="w-full h-48">
                     <a href={aa1} target="_blank" >
-                        <img src={aa1} alt="Image 1" className="w-full h-full object-cover rounded-lg" />
+                        <img src={aa1} alt="Image 1" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
 
                 {/* รูปที่ 2 */}
                 <div className="w-full h-48">
                     <a href={aa2} target="_blank" >
-                        <img src={aa2} alt="Image 2" className="w-full h-full object-cover rounded-lg" />
+                        <img src={aa2} alt="Image 2" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
 
                 {/* รูปที่ 3 */}
                 <div className="w-full h-48">
                     <a href={aa3} target="_blank" >
-                        <img src={aa3} alt="Image 3" className="w-full h-full object-cover rounded-lg" />
+                        <img src={aa3} alt="Image 3" className="w-full h-full object-cover rounded-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102 ..." />
                     </a>
                 </div>
             </div>
