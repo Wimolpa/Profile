@@ -1,115 +1,79 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules"; // เพิ่ม Pagination
 import "swiper/css";
-import { Card, CardHeader, CardBody, Typography } from '@material-tailwind/react';
-import c from '../assets/c.png';
-import java from '../assets/java.png';
-import dart from '../assets/dart.png';
-import css from '../assets/css.png';
-import flask from '../assets/Flask.png';
-import flutter from '../assets/Flutter.png';
-import html from '../assets/html.png';
-import js from '../assets/js.png';
-import python from '../assets/python.png';
-import ts from '../assets/typescript.png';
-import { useState } from 'react';
+import "swiper/css/pagination";
+import { Card, CardHeader, CardBody, Typography } from "@material-tailwind/react";
+import c from "../assets/c.png";
+import java from "../assets/java.png";
+import dart from "../assets/dart.png";
+import css from "../assets/css.png";
+import flask from "../assets/Flask.png";
+import flutter from "../assets/Flutter.png";
+import html from "../assets/html.png";
+import js from "../assets/js.png";
+import python from "../assets/python.png";
+import ts from "../assets/typescript.png";
+import tw from "../assets/tw.png"
+
+const skills = [
+    { img: js, name: "JavaScript" },
+    { img: ts, name: "TypeScript" },
+    { img: python, name: "Python" },
+    { img: java, name: "Java" },
+    { img: dart, name: "Dart" },
+    { img: html, name: "HTML" },
+    { img: css, name: "CSS" },
+    { img: tw, name: "Tailwindcss" },
+    { img: flask, name: "Flask" },
+    { img: flutter, name: "Flutter" },
+
+
+];
 
 const Skills = () => {
-    const [activeSlide, setActiveSlide] = useState(0);
-
-    const handleSlideChange = (swiper) => {
-        setActiveSlide(swiper.activeIndex);
-    };
-
     return (
-        <div className="mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 py-12">
+            <Typography variant="h4" color="blue-gray" className="text-center font-bold mb-6">
+                --- Skills ---
+            </Typography>
+
             <Swiper
-                spaceBetween={30}
-                slidesPerView={3}
+                spaceBetween={20}
+                slidesPerView={1}
                 loop={true}
-                onSlideChange={handleSlideChange}
-                breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                    768: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
-                    },
+                centeredSlides={true}
+                centerInsufficientSlides={true}
+                pagination={{
+                    clickable: true,
+                    el: ".swiper-pagination", // กำหนดตำแหน่ง pagination
                 }}
+                modules={[Pagination]}
+                breakpoints={{
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    1024: { slidesPerView: 3, spaceBetween: 30 },
+                }}
+                className="pb-12" // เพิ่ม padding-bottom ให้ Swiper
             >
-                <SwiperSlide>
-                    <Card className="w-full max-w-xs mx-auto">
-                        <CardHeader floated={false} className="h-full">
-                            <img src={js} alt="JavaScript" className="w-full h-32 object-contain" />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h6" color="blue-gray" className="mb-2 text-sm sm:text-base">
-                                JavaScript
-                            </Typography>
-                        </CardBody>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Card className="w-full max-w-xs mx-auto">
-                        <CardHeader floated={false} className="h-full">
-                            <img src={ts} alt="TypeScript" className="w-full h-32 object-contain" />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h6" color="blue-gray" className="mb-2 text-sm sm:text-base">
-                                TypeScript
-                            </Typography>
-                        </CardBody>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Card className="w-full max-w-xs mx-auto">
-                        <CardHeader floated={false} className="h-full">
-                            <img src={python} alt="Python" className="w-full h-32 object-contain" />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h6" color="blue-gray" className="mb-2 text-sm sm:text-base">
-                                Python
-                            </Typography>
-                        </CardBody>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Card className="w-full max-w-xs mx-auto">
-                        <CardHeader floated={false} className="h-full">
-                            <img src={java} alt="Java Programming Language" className="w-full h-32 object-contain" />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h6" color="blue-gray" className="mb-2 text-sm sm:text-base">
-                                Java Programming Language
-                            </Typography>
-                        </CardBody>
-                    </Card>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Card className="w-full max-w-xs mx-auto">
-                        <CardHeader floated={false} className="h-full">
-                            <img src={dart} alt="Dart Programming Language" className="w-full h-32 object-contain" />
-                        </CardHeader>
-                        <CardBody className="text-center">
-                            <Typography variant="h6" color="blue-gray" className="mb-2 text-sm sm:text-base">
-                                Dart Programming Language
-                            </Typography>
-                        </CardBody>
-                    </Card>
-                </SwiperSlide>
+                {skills.map((skill, index) => (
+                    <SwiperSlide key={index} className="flex justify-center">
+                        <div className="flex justify-center w-full">
+                            <Card className="w-56 sm:w-64 md:w-72 lg:w-80 bg-white shadow-lg rounded-xl overflow-hidden">
+                                <CardHeader floated={false} className="h-40 flex justify-center items-center">
+                                    <img src={skill.img} alt={skill.name} className="h-24 object-contain" />
+                                </CardHeader>
+                                <CardBody className="text-center">
+                                    <Typography variant="h6" color="blue-gray" className="text-lg font-semibold">
+                                        {skill.name}
+                                    </Typography>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
 
-            {/* แสดงหมายเลขสไลด์ปัจจุบัน */}
-            <div className="mt-4 text-center">
-                <Typography variant="h5" color="blue-gray">
-                    Slide {activeSlide + 1} of 10
-                </Typography>
-            </div>
+            {/* เพิ่ม container สำหรับจุดด้านล่าง */}
+            <div className="swiper-pagination !static bottom-0 flex justify-center mt-4"></div>
         </div>
     );
 };
