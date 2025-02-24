@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <footer className="bg-[#406994] text-white py-10 mt-10 w-full">
       <div className="max-w-screen-xl mx-auto px-4 ">
-        <p className="text-lg font-semibold text-left">Contact</p>
+        <p className="text-lg font-semibold text-left ">Contact</p>
 
         <div className="flex flex-col md:flex-row items-start justify-start gap-4 mt-2">
           <div className="flex items-center gap-2">
