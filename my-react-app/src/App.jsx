@@ -12,14 +12,11 @@ function App() {
   return (
     <>
       <div>
-
         <div className="h-[50vh] bg-[#406994] to-transparent">
           <div className='pt-10'>
             <AboutMe />
           </div>
-
         </div>
-
         <div className="p-3 pt-100">
           <Skills />
           <div className="max-w-screen-xl mx-auto">
@@ -29,7 +26,6 @@ function App() {
             <Project />
           </div>
         </div>
-
         <Contact />
       </div>
 
