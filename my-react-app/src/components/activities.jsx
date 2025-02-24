@@ -28,11 +28,12 @@ const Activities = () => {
                 </div>
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mt-4"> Lab Assistant / Teacher Assistant</h2>
-            COMPUTER PROGRAMMING SKILL I (C programming) : Lab Assistant <br />
-            COMPUTER PROGRAMMING SKILL II (Java programming) : Lab Assistant <br />
-            Object-Oriented Software Development (Java language) : Lab Assistant <br />
-            Data Structure : Lab Assistant <br />
-            EMBEDDED SYSTEM : Teacher Assistant
+            <p className="mt-2 text-gray-600" >COMPUTER PROGRAMMING SKILL I (C programming) : Lab Assistant <br />
+                COMPUTER PROGRAMMING SKILL II (Java programming) : Lab Assistant <br />
+                Object-Oriented Software Development (Java language) : Lab Assistant <br />
+                Data Structure : Lab Assistant <br />
+                Embedded System: Teacher Assistant
+            </p>
             <div className="grid grid-cols-3 gap-4 pt-5">
                 <div className="w-full h-48">
                     <a href={aa1} target="_blank" >
@@ -51,7 +52,7 @@ const Activities = () => {
                 </div>
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mt-4"> The Best of the Best Embedded System Develpers : TESA Top Gun Rally 2023</h2>
-            Developing firmware for measuring water level and transmitting data using C++
+            <p className="mt-2 text-gray-600"> Developing firmware for measuring water level and transmitting data using C++</p>
         </div>
 
 

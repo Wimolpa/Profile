@@ -11,13 +11,14 @@ function App() {
 
   return (
     <>
+
       <div>
-        <div className="h-[50vh] bg-[#406994] to-transparent">
-          <div className='pt-10'>
+        <div className="h-[43vh] md:h-[50vh] bg-[#406994] to-transparent">
+          <div className='pt-10 '>
             <AboutMe />
           </div>
         </div>
-        <div className="p-3 pt-100">
+        <div className="p-3 pt-120 md:pt-100">
           <Skills />
           <div className="max-w-screen-xl mx-auto">
             <Activities />

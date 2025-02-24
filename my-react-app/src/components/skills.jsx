@@ -35,7 +35,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className="max-w-6xl mx-auto px-4 py-12 ">
+        <div className="max-w-6xl mx-auto px-4 py-12 text-[#234160]">
             <Typography variant="h2" color="blue-gray" className="text-center font-bold mb-6 pb-3">
                 --- Skills ---
             </Typography>
