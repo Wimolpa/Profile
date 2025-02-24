@@ -30,7 +30,7 @@ const AboutMe = () => {
                                 I'm
                             </p>
                         </div>
-                        <div class="row-span-3 col-span-2 ... mx-0 md:mx-20 ">
+                        <div class="row-span-3 col-span-2 ... mx-0 sm:mx-20 ">
                             <img
                                 className={`max-w-43 max-h-43 md:max-w-56 md:max-h-56 lg:max-w-64 lg:max-h-64  w-43 h-43 md:w-56 md:h-56 lg:w-64 lg:h-64 object-cover rounded-full border-7 border-[#d8e6ed] transform transition-all duration-1000 
                     ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
