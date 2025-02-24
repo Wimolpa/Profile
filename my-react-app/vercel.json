@@ -1,12 +1,9 @@
 {
   "builds": [
     {
-      "src": "my-react-app/package.json",
+      "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "my-react-app/build" }
+      "config": { "distDir": "dist" }
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "my-react-app/$1" }
   ]
 }
