@@ -58,6 +58,7 @@ const AboutMe = () => {
                     >
                         Graduated from Silpakorn University, Faculty of Science, majoring in Computer Science.
                     </p>
+
                 </div>
             </div>
         </div>
