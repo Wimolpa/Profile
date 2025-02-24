@@ -15,30 +15,55 @@ const AboutMe = () => {
 
 
     return (
-        <div className="flex flex-col md:flex-row items-center justify-center w-full h-screen px-4 py-4 space-y-8 md:space-y-0 md:space-x-8">
-            <div className="flex flex-col items-center md:items-start">
-                {/* ข้อความสไลด์เข้ามา */}
-                <p
-                    className={`text-3xl md:text-4xl font-bold transform transition-all duration-1000 self-start 
+        <div className="flex flex-col items-center justify-center w-full h-screen px-4 pt-4 space-y-8">
+            <div className="flex flex-col items-center text-center">
+
+
+                <div className="flex flex-col items-center ">
+                    <div class="grid grid-rows-3 grid-flow-col gap-4">
+
+                        <div class="col-span-1 ... w-10 "></div>
+                        <div class="col-span-1 ... w-10 "></div>
+                        <div class="col-span-1   ...  w-10 pt-3 md:pt-7 ">
+                            <p
+                                className={`text-4xl md:text-5xl font-bold transform transition-all duration-1000 w-full text-right 
                         ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
-                >
-                    I'm
-                </p>
-                <p
-                    className={`text-5xl md:text-6xl font-semibold transform transition-all duration-1000 
+                            >
+                                I'm
+                            </p>
+                        </div>
+                        <div class="row-span-3 col-span-2 ... mx-20 ">
+                            <img
+                                className={`max-w-43 max-h-43 md:max-w-56 md:max-h-56 lg:max-w-64 lg:max-h-64  w-43 h-43 md:w-56 md:h-56 lg:w-64 lg:h-64 object-cover rounded-full border-7 border-[#d8e6ed] transform transition-all duration-1000 
+                    ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
+                                src={image}
+                                alt="Profile"
+                            />
+                        </div>
+                        <div class="col-span-3 ... w-10"></div>
+                        <div class="col-span-3 ... w-10 "></div>
+                        <div class="col-span-3 ... w-10 "></div>
+                    </div>
+
+                    <p
+                        className={`pb-1 text-5xl md:text-6xl font-semibold transform transition-all duration-1000 
                         ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
-                >
-                    Wimolpa Inkong
-                </p>
-            </div>
-            <div>
-                <img
-                    className={`w-32 h-32 md:w-48 md:h-48 object-cover rounded-full transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
-                    src={image}
-                    alt="Profile"
-                />
+                    >
+                        Wimolpa Inkong
+                    </p>
+
+                    <p
+                        className={`pt-3 text-lg md:text-2xl font-semibold transform transition-all duration-1000 text-center
+                    ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}
+                    >
+                        Graduated from Silpakorn University, Faculty of Science, majoring in Computer Science.
+                    </p>
+                </div>
             </div>
         </div>
+
+
+
     );
 };
 
