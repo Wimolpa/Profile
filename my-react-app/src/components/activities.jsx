@@ -28,8 +28,8 @@ const Activities = () => {
                 </div>
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mt-4"> Lab Assistant / Teacher Assistant</h2>
-            <p className="mt-2 text-gray-600" >COMPUTER PROGRAMMING SKILL I (C programming) : Lab Assistant <br />
-                COMPUTER PROGRAMMING SKILL II (Java programming) : Lab Assistant <br />
+            <p className="mt-2 text-gray-600" >Computer Programming Skill I (C programming) : Lab Assistant <br />
+                Computer Programming Skill II (Java programming) : Lab Assistant <br />
                 Object-Oriented Software Development (Java language) : Lab Assistant <br />
                 Data Structure : Lab Assistant <br />
                 Embedded System: Teacher Assistant
